@@ -23,7 +23,7 @@ export default function Dashboard() {
         <div className="wd-dashboard-course">
             <Link className="wd-dashboard-course-link"
                 to="/Kanbas/Courses/1234/Home">
-            <img src="/images/reactjs.jpg" width={200} />
+            <img src="/images/linalg.jpg" width={200} />
             <div>
               <h5>
                  MATH2331
@@ -38,7 +38,7 @@ export default function Dashboard() {
         <div className="wd-dashboard-course">
           <Link className="wd-dashboard-course-link"
                 to="/Kanbas/Courses/1234/Home">
-            <img src="/images/reactjs.jpg" width={200} />
+            <img src="/images/hci.jpg" width={200} />
             <div>
               <h5>
                  IS4300
@@ -53,7 +53,7 @@ export default function Dashboard() {
         <div className="wd-dashboard-course">
           <Link className="wd-dashboard-course-link"
                 to="/Kanbas/Courses/1234/Home">
-            <img src="/images/reactjs.jpg" width={200} />
+            <img src="/images/web_development.jpg" width={200} />
             <div>
               <h5>
                  CS4550
@@ -68,7 +68,7 @@ export default function Dashboard() {
         <div className="wd-dashboard-course">
           <Link className="wd-dashboard-course-link"
                 to="/Kanbas/Courses/1234/Home">
-            <img src="/images/reactjs.jpg" width={200} />
+            <img src="/images/dataeng.jpg" width={200} />
             <div>
               <h5>
                  DS4300
@@ -83,7 +83,7 @@ export default function Dashboard() {
         <div className="wd-dashboard-course">
           <Link className="wd-dashboard-course-link"
                 to="/Kanbas/Courses/1234/Home">
-            <img src="/images/reactjs.jpg" width={200} />
+            <img src="/images/pnn.jpg" width={200} />
             <div>
               <h5>
                  DS4440
@@ -98,7 +98,7 @@ export default function Dashboard() {
         <div className="wd-dashboard-course">
           <Link className="wd-dashboard-course-link"
                 to="/Kanbas/Courses/1234/Home">
-            <img src="/images/reactjs.jpg" width={200} />
+            <img src="/images/biostats.jpg" width={200} />
             <div>
               <h5>
                  ENVR2500
@@ -113,7 +113,7 @@ export default function Dashboard() {
         <div className="wd-dashboard-course">
           <Link className="wd-dashboard-course-link"
                 to="/Kanbas/Courses/1234/Home">
-            <img src="/images/reactjs.jpg" width={200} />
+            <img src="/images/calc.jpg" width={200} />
             <div>
               <h5>
                  MATH1342
@@ -128,7 +128,7 @@ export default function Dashboard() {
         <div className="wd-dashboard-course">
           <Link className="wd-dashboard-course-link"
                 to="/Kanbas/Courses/1234/Home">
-            <img src="/images/reactjs.jpg" width={200} />
+            <img src="/images/discrete.jpg" width={200} />
             <div>
               <h5>
                  CS1800
