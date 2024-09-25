@@ -8,6 +8,7 @@ export default function TOC() {
         <li><Link to="/Labs/Lab2">Lab 2</Link></li>
         <li><Link to="/Labs/Lab3">Lab 3</Link></li>
         <li><Link to="/Kanbas">Kanbas</Link></li>
+        <li><a id="wd-github" href="https://github.com/josephgawler/kanbas-react-web-app/tree/A1">Github repo</a><br/></li>
       </ul>
     );
   }
