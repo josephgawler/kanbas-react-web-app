@@ -1,4 +1,13 @@
 import "./index.css"
+import ForegroundColors from "./ForegroundColors";
+import BackgroundColors from "./BackgroundColors";
+import Borders from "./Borders";
+import Padding from "./Padding";
+import Margins from "./Margins";
+import Corners from "./Corners";
+import Dimensions from "./Dimensions";
+import Positions from "./Positions";
+import Zindex from "./Zindex";
 export default function Lab2() {
   return (
     <div id="wd-lab2">
@@ -48,6 +57,39 @@ This heading has same style as paragraph above
           styles depending on the document structure
       </p>
     </div>
+  </div>
+  <div>
+
+    <ForegroundColors />
+  </div>
+  <div>
+    <BackgroundColors />
+  </div>
+  <div>
+    <Borders />
+  </div>
+  <div>
+    <Padding />
+  </div>
+  <div>
+    <Margins />
+  </div>
+  <div>
+    <Corners />
+  </div>
+  <div>
+    <Dimensions />
+  </div>
+  <div>
+    <Positions />
+  </div>
+  <div>
+    <Zindex />
+  </div>
+
+
+  <div>
+    
   </div>
 </div>
 
