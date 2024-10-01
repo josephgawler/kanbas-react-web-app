@@ -8,6 +8,9 @@ import Corners from "./Corners";
 import Dimensions from "./Dimensions";
 import Positions from "./Positions";
 import Zindex from "./Zindex";
+import Float from "./Float";
+import GridLayout from "./GridLayout";
+import Flex from "./Flex";
 export default function Lab2() {
   return (
     <div id="wd-lab2">
@@ -85,6 +88,15 @@ This heading has same style as paragraph above
   </div>
   <div>
     <Zindex />
+  </div>
+  <div>
+    <Float />
+  </div>
+  <div>
+    <GridLayout />
+  </div>
+  <div>
+    <Flex />
   </div>
 
 
