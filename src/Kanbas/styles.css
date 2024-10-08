@@ -35,3 +35,7 @@ border-left: 3px solid green !important;
 .wd-padded-left {
   padding-left: 70px;
   }
+
+.wd-padded-left-form {
+  padding-left: 15px;
+}
