@@ -1,7 +1,9 @@
+import { BsCalendar3 } from "react-icons/bs";
+
 export default function AssignmentEditor() {
     return (
       <div id="wd-assignments-editor">
-        <div className="mb-3 row col-sm-10 wd-padded-left-form">
+        <div className="mb-3 row col-sm-12 wd-padded-left-form wd-margin-all-around">
             <label htmlFor="assignmentname"
                 className="col-sm-10 col-form-label">
             Assignment Name </label> <br></br>
@@ -11,142 +13,173 @@ export default function AssignmentEditor() {
 
 
             </div>
-          <div className="mb-3 row col-sm-10 wd-padded-left-form">
+          <div className="mb-3 row col-sm-12 wd-padded-left-form wd-margin-all-around">
           
             <label htmlFor="description"
                 className="col-sm-10 col-form-label">
             Description </label>
-            <div className="col-sm-10">
+            <div className="col-sm-12">
             <textarea className="form-control"
-                id="description" rows={3}></textarea>
+                id="description" rows={3}> 
+                The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following: your full name and section links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.
+                </textarea>
             </div>
+
         
           </div>
-          
-        <h3>
-        <label htmlFor="wd-name">Assignment Name</label><br></br>
-        </h3>
-        <input id="wd-name" value="A1 - ENV + HTML" /><br /><br />
-        <textarea id="wd-description">
-          The assignment is available online Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following: your full name and section links to each of the lab assignments Link to the Kanbas application Links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.
-        </textarea>
-        <br />
-        <table>
-            <br></br>
-        <tr>
-          <td align="right" valign="top">
-            <label htmlFor="wd-points">Points</label>
-          </td>
-          <td>
-            <input id="wd-points" value={100} />
-          </td>
-        </tr>
-        <br></br>
-        <tr>
-            <td align="right" valign="top">
 
-            <label htmlFor="wd-group">Assignment Group </label>
-            </td>
-            <select id="wd-group" ><br></br>
-                <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
-                <option value="QUIZZES">QUIZZES</option>
-                <option value="EXAMS">EXAMS</option>
-                <option value="PROJECT">PROJECT</option>
-            </select>
-            <br></br>
-        </tr>
-        <br></br>
-        <tr>
-            <td align="right" valign="top">
+        <div className="mb-3 row col-sm-10 float-end wd-margin-all-around">
+            <label htmlFor="points"
+                className="col-form-label col-sm-2">
+            Points </label> 
+            <div className="col-sm-10 float-end">
+            <input type="text" id="points"
+                    className="form-control col-sm-10 float-end" />
 
-            <label htmlFor="wd-display-grade-as">Display Grade as </label>
-            </td>
-            <select id="wd-display-grade-as"><br></br>
-                <option selected value="Percentage">Percentage</option>
-            </select>
+            </div>
+        </div>
 
-        </tr>
-        <br></br>
-        <tr>
-            <td align="right" valign="top">
+        <div className="mb-3 row col-sm-10 float-end wd-margin-all-around">
+            <label htmlFor="assignmentgroup"
+                className="col-form-label col-sm-2">
+            Assignment Group </label> 
+            <div className="col-sm-10 float-end">
+              <select className="form-select">
+                <option selected>ASSIGNMENTS</option>
+                <option value="1">QUIZZES</option>
+                <option value="2">EXAMS</option>
+                <option value="3">PROJECTS</option>
+              </select>
+            </div>
+        </div>
 
-            <label htmlFor="wd-submission-type">Submission Type </label>
-            </td>
-            <select id="wd-display-grade-as"><br></br>
-                <option selected value="Online">Online</option>
-            </select>
+        <div className="mb-3 row col-sm-10 float-end wd-margin-all-around">
+            <label htmlFor="displaygrade"
+                className="col-form-label col-sm-2">
+            Display Grade as </label> 
+            <div className="col-sm-10 float-end">
+              <select className="form-select">
+                <option selected>Percentage</option>
+              </select>
+            </div>
+        </div>
 
-        </tr>
-        
-       
-        
-        <tr>
-        <td align="left" valign="top">
-        <p>Online Entry Options</p>
-        </td>
-        </tr>
-        <tr>
-            <td align="left" valign="top">
-        <input type="checkbox" name="check-entry" id="wd-text-entry"/>
-        <label htmlFor="wd-text-entry">Text Entry</label><br/>
-
-        <input type="checkbox" name="check-entry" id="wd-website-url"/>
-        <label htmlFor="wd-website-url">Website URL</label><br/>
       
-        <input type="checkbox" name="check-entry" id="wd-media-recordings"/>
-        <label htmlFor="wd-media-recordings">Media Recordings</label><br/>
-   
-        <input type="checkbox" name="check-entry" id="wd-student-annotation"/>
-        <label htmlFor="wd-student-annotation">Student Annotation</label><br/>
+        <div className="mb-3 row col-sm-10 float-end wd-border-very-thin wd-border-black wd-border-solid 
+              wd-padding-fat">
+        <h3><b>Submission</b></h3>
+        <div className="mb-3 row col-sm-10 float-end wd-margin-all-around">
+            <label htmlFor="submissiontype"
+                className="col-form-label col-sm-2">
+            Submission Type </label> 
+            <div className="col-sm-10 float-end">
+              <select className="form-select">
+                <option selected>Online</option>
+              </select>
+            </div>
+        </div>
+
+          <label htmlFor="r6"
+                className="col-sm-10 col-form-label">
+            Online Entry Options </label>
+            <div className="col-sm-10 offset-sm-2">
+                <div className="form-check">
+                <input className="form-check-input" type="checkbox" 
+                        id="r6" />
+                <label className="form-check-label" htmlFor="r6">
+                    Text Entry </label> </div>
+                <div className="form-check">
+                <input className="form-check-input" type="checkbox" 
+                        id="r6" />
+                <label className="form-check-label" htmlFor="r6">
+                    Website URL </label> </div> 
+                <div className="form-check">
+                <input className="form-check-input" type="checkbox" 
+                        id="r6" />
+                <label className="form-check-label" htmlFor="r6">
+                    Media Recordings </label> </div> 
+                <div className="form-check">
+                <input className="form-check-input" type="checkbox" 
+                        id="r6" />
+                <label className="form-check-label" htmlFor="r6">
+                    Student Annotations </label> </div> 
+                <div className="form-check">
+                <input className="form-check-input" type="checkbox" 
+                        id="r6" />
+                <label className="form-check-label" htmlFor="r6">
+                    File Uploads </label> </div> 
+                    
+                    </div>
+          </div>
+
+
+        <div className="mb-3 row col-sm-10 float-end wd-border-very-thin wd-border-black wd-border-solid 
+              wd-padding-fat">
+          <h3><b>Assign</b></h3>
+          <div className="mb-3 row col-sm-10 float-end wd-margin-all-around">
+              <label htmlFor="assign"
+                  className="col-form-label col-sm-2">
+              Assign to </label> 
+              <div className="col-sm-10 float-end">
+                <select className="form-select">
+                  <option selected>Everyone</option>
+                </select>
+              </div>
+          </div>
+
+          <div className="mb-3 row col-sm-10 float-end wd-margin-all-around">
+          <label htmlFor="r7"
+                className="col-sm-2 col-form-label">
+            Due </label>
+            <div className="col-sm-10 float-end">
+              <div className="input-group">
+              <input type="text" className="form-control" id="r7"/>
+              <span className="input-group-text"><BsCalendar3 /></span>
+              </div>
+            </div>
+                    
+          </div>
+
+          <div className="mb-3 row col-sm-10 float-end wd-margin-all-around">
+          <label htmlFor="r8"
+                className="col-sm-2 col-form-label">
+            Available From </label>
+            <div className="col-sm-10 float-end">
+              <div className="input-group">
+              <input type="text" className="form-control" id="r8"/>
+              <span className="input-group-text"><BsCalendar3 /></span>
+              
+              </div>
+            </div>
+                    
+          </div>
+
+          <div className="mb-3 row col-sm-10 float-end wd-margin-all-around">
+          <label htmlFor="r9"
+                className="col-sm-2 col-form-label">
+            Until </label>
+            <div className="col-sm-10 float-end">
+              <div className="input-group">
+              <input type="text" className="form-control" id="r9"/>
+              <span className="input-group-text"><BsCalendar3 /></span>
+              
+              </div>
+            </div>
+                    
+          </div>
+
+        </div>
         
-        <input type="checkbox" name="check-entry" id="wd-file-upload"/>
-        <label htmlFor="wd-file-upload">File Uploads</label><br/>
-        </td>
-        </tr>
+        <div className="mb-3 row col-sm-10 d-flex justify-content-end wd-margin-all-around float-end">
+          
 
-        <tr>
-          <td align="left" valign="top">
-            <label htmlFor="wd-assign-to">Assign to</label>
-            <br></br>
-            <input id="wd-assign-to" value="Everyone" />
-          </td>
-        </tr>
+            <button id="wd-cancel" className="btn btn-lg btn-secondary me-1 col-sm-2">
+            Cancel</button>
+            <button id="wd-save" className="btn btn-lg btn-danger me-1 col-sm-2">
+            Save</button>
+          
 
-        <tr>
-            <td align="left" valign="top">
-            <label htmlFor="wd-due-date"> Due </label>
-            <br></br>
-            <input type="date"
-                id="wd-due-date"
-                value="2024-05-13"/><br/>
-            </td>
-        </tr>
+        </div>
 
-        <tr>
-            <td align="left" valign="top">
-            <label htmlFor="wd-available-from"> Available from </label>
-            <br></br>
-            <input type="date"
-                id="wd-available-from"
-                value="2024-05-06"/><br/>
-
-            </td>
-
-            <td align="left" valign="top">
-            <label htmlFor="wd-available-until"> Until </label>
-            <br></br>
-            <input type="date"
-                id="wd-available-until"
-                value="2024-05-20"/><br/>
-
-            </td>
-        </tr>
-
-        
-
-
-
-        {/* Complete on your own */}
-      </table>
-    </div>
+      </div>
 );}

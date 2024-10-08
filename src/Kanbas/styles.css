@@ -39,3 +39,14 @@ border-left: 3px solid green !important;
 .wd-padded-left-form {
   padding-left: 15px;
 }
+
+.wd-rounded-corners-all-around {
+  border-radius: 50px;
+  }
+
+.wd-margin-all-around {
+  margin: 30px;
+  }
+
+.wd-border-very-thin {
+  border-width: 2px; }
