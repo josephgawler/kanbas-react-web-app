@@ -1,6 +1,9 @@
+import AssignmentsControls from "./AssignmentsControls"; 
 export default function Assignments() {
     return (
       <div id="wd-assignments">
+
+        <AssignmentsControls /><br /><br /><br /><br />
         <input id="wd-search-assignment"
                placeholder="Search for Assignments" />
         <button id="wd-add-assignment-group">+ Group</button>
@@ -8,8 +11,8 @@ export default function Assignments() {
         <h3 id="wd-assignments-title">
           ASSIGNMENTS 40% of Total <button>+</button>
         </h3>
-        <ul id="wd-assignment-list">
-          <li className="wd-assignment-list-item">
+        <ul id="wd-assignment-list" className="list-group rounded-0">
+          <li className="wd-assignment list-group-item p-0 mb-5 fs-5 border-gray">
             <a className="wd-assignment-link"
               href="#/Kanbas/Courses/1234/Assignments/123">
               A1 - ENV + HTML

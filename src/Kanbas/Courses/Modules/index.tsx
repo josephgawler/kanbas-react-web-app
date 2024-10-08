@@ -5,13 +5,6 @@ import { BsGripVertical } from "react-icons/bs";
 export default function Modules() {
     return (
       <div>
-        <button>Collapse All</button>
-        <button>View Progress</button>
-        <select name="publish" id = "publish"> 
-            <option value="publish-all">Publish All</option>
-            <option value="test2">Test2</option>
-        </select>
-        <button>+ Module</button>
         <ModulesControls /><br /><br /><br /><br />
         <ul id="wd-modules" className="list-group rounded-0">
           <li className="wd-module list-group-item p-0 mb-5 fs-5 border-gray">
