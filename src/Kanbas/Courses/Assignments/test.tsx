@@ -1,0 +1,1 @@
+const alice = {  first: 'Alice',  last: 'Wonderland',  salary: 100000};

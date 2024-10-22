@@ -1,6 +1,10 @@
 import { BsCalendar3 } from "react-icons/bs";
+import { useParams, Link } from "react-router-dom";
+import * as db from "../../Database";
 
 export default function AssignmentEditor() {
+    const assignments = db.assignments
+
     return (
       <div id="wd-assignments-editor">
         <div className="mb-3 row col-sm-12 wd-padded-left-form wd-margin-all-around">
