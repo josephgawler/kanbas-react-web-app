@@ -32,7 +32,7 @@ export default function Assignments() {
                     <span className="wd-fg-color-green">
                       <BsPencilSquare className="me-2 fs-3" />
                     </span>
-                    <b>{assignment.title}</b> {/* Render assignment title */}
+                    <b>{assignment.title}</b>
                     <p className="wd-padded-left fs-6">
                       <span className="wd-fg-color-red"><b>Course:</b> {assignment.course}</span>
                     </p>
